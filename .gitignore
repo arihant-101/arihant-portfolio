@@ -1,0 +1,25 @@
+# AI coding assistants / IDE tooling
+.claude/
+.cursor/
+.agents/
+.aider*
+.copilot/
+.continue/
+.windsurf/
+.codeium/
+.tabnine/
+.sourcegraph/
+AGENTS.md
+.cursorignore
+.cursorrules
+*.local.json
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Vercel local config (project linking metadata)
+.vercel/
