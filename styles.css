@@ -90,7 +90,7 @@ img {
   display: grid;
   grid-template-columns: 240px 1px minmax(0, 1fr);
   align-items: start;
-  min-height: calc(100vh - 62px - 41px);
+  min-height: calc(100vh - 62px);
 }
 
 .col-sep {
@@ -292,6 +292,41 @@ img {
   color: var(--text-primary);
   letter-spacing: -0.3px;
   margin-bottom: 20px;
+}
+
+.section-label .amp {
+  font-family: var(--font-sans);
+  font-weight: 400;
+}
+
+.card-title-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.card-ext-link {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: #1d4ed8;
+  text-decoration: none;
+  line-height: 1.3;
+}
+
+.card-ext-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.card-ext-link-play {
+  color: #01875f;
+  font-weight: 500;
+}
+
+.card-ext-link-play:hover {
+  color: #016b4a;
 }
 
 /* ===== STARTUP CARD (Tranquil AI) ===== */
@@ -807,22 +842,6 @@ img {
   color: var(--text-muted);
 }
 
-/* ===== FOOTER ===== */
-.footer {
-  border-top: 2px solid var(--border-strong);
-  padding: 11px 32px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-left,
-.footer-right {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: var(--text-muted);
-}
-
 /* ===== RESPONSIVE: MOBILE ===== */
 @media (max-width: 768px) {
 
@@ -887,13 +906,5 @@ img {
 
   .bottom-col {
     padding: 20px;
-  }
-
-  /* Footer: stack vertically */
-  .footer {
-    flex-direction: column;
-    gap: 6px;
-    text-align: center;
-    padding: 14px 20px;
   }
 }
