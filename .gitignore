@@ -23,3 +23,5 @@ desktop.ini
 
 # Vercel local config (project linking metadata)
 .vercel/
+
+.vercel
